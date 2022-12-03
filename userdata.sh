@@ -39,7 +39,7 @@ echo "//registry.npmjs.org/:_authToken=${NPM_API_KEY}" > .npmrc
 
 ## Github Deploy Key
 echo ${GITHUB_OLARM_FRONTEND_DEPLOY_KEY} | base64 --decode | gunzip > ./.ssh/id_rsa_frontend_github1
-#echo ${GITHUB_OLARM_SCHEDULER_DEPLOY_KEY} | base64 --decode | gunzip > ./.ssh/id_rsa_scheduler_github1
+##echo ${GITHUB_OLARM_SCHEDULER_DEPLOY_KEY} | base64 --decode | gunzip > ./.ssh/id_rsa_scheduler_github1
 chmod 600 /home/ubuntu/.ssh/id_rsa_front_github1
 # chmod 600 /home/ubuntu/.ssh/id_rsa_scheduler_github1
 echo "Host github.com
